@@ -2,9 +2,9 @@ REM SQL Runtime Auto Installer
 echo off
 ECHO Installing SQL 2022 Runtime, Instance name DBINSTANCENAMEGOESHERE
 "C:\Path\To\Installer\SQL Runtime 2022 (64bit)\setup.exe" /ConfigurationFile="c:\path\to\installer\SQL Runtime 2022 (64bit)\configurationFile.ini"
-ECHO Click in Install when prompted
+ECHO Click Install when prompted
 cd\
-cd "c:\impromed\SQL Runtime 2022 (64bit)"
+cd "c:Path\ToInstaller\SQL Runtime 2022 (64bit)"
 SSMS-Setup-ENU.exe
 REM This shuts off the SQL server service on workstations
 Set Server=A
