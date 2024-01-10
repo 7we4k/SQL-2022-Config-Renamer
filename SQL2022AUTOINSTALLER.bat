@@ -10,15 +10,6 @@ REM This shuts off the SQL server service on workstations
 Set Server=A
 :ASK
 ECHO
-ECHO Is This A Server (Y/N)? :
-set /p Server= %=%
-If %Server% == y Goto YES
-If %Server% == Y Goto YES
-If %Server% == n Goto NO
-If %Server% == N Goto NO
-ECHO Not A Valid Entry
-Goto ASK
-:NO
 sc config SQLAgent$DBINSTANCENAMEGOESHERE start= disabled
 sc config MSSQL$DBINSTANCENAMEGOESHERE start= disabled
 :YES
