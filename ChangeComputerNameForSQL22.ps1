@@ -1,4 +1,4 @@
-##Change Computer Name in SQL Auto Installer by Jory Ayer 1/10/24
+##Change Computer Name in SQL Auto Installer by 7we4k 1/10/24
 
 # Get the computer name
 $computerName = $env:COMPUTERNAME
